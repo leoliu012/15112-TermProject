@@ -43,7 +43,8 @@ def findPerpendicularPoint(point1, point2, distance):
     perpX = -dy
     perpY = dx
 
-
+    if length == 0:
+        return (x1, y1), (x1, y1)
     #unit vector
     perpX /= length
     perpY /= length
