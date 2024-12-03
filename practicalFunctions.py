@@ -1,5 +1,6 @@
 import math
 from PIL import Image
+import random
 
 def getDistance(x1,y1,x2,y2):
     return ((x2 - x1)**2 + (y2 - y1)**2)**0.5
@@ -87,10 +88,7 @@ def findPointAtAngleDistance(x1, y1, angle, distance):
 
 ##The function loadPilImage(url) is from TP-Related Demos
 ## -> https://www.cs.cmu.edu/~112/notes/tp-related-demos/tp-related-demos.html
-
-# This demos PIL getpixel and putpixel.
 def loadPilImage(url):
-    # Loads a PIL image (not a CMU image!) from a url:
     return Image.open(url)
 
 
@@ -151,4 +149,76 @@ def findClosestPoint(point1, points):
             closestDistance = distance
     return closestPointInd
 
+##############CITATION###########################
+#################################################
+#The code below is from ChatGPT
+# some changes/adjustment has been made
+#THIS IS THE BEGINNING OF CITED CODE
+#################################################
+#################################################
+def angleBetweenTwoLine(l1, l2):
 
+    (x1,y1), (x2,y2) = l1
+    (x3,y3), (x4,y4) =l2
+    def vector_from_points(start, end):
+        return (end[0] - start[0], end[1] - start[1])
+
+    def dot_product(v1, v2):
+        return v1[0] * v2[0] + v1[1] * v2[1]
+
+    def cross_product(v1, v2):
+        return v1[0] * v2[1] - v1[1] * v2[0]
+
+    vector1 = vector_from_points((x1,y1), (x2,y2))
+    vector2 = vector_from_points((x3,y3), (x4,y4))
+
+    dot = dot_product(vector1, vector2)
+    cross = cross_product(vector1, vector2)
+
+    angleRad = math.atan2(cross, dot)
+    angle = math.degrees(angleRad)
+
+    return angle
+
+##############CITATION###########################
+#################################################
+#THIS IS THE END OF CITED CODE
+#################################################
+#################################################
+
+def rotatePoint(cx, cy, x, y, angle):
+    radians = math.radians(angle)
+    cos = math.cos(radians)
+    sin = math.sin(radians)
+    rX = (x - cx)*cos - (y - cy)*sin + cx
+    rY = (x - cx)*sin + (y - cy)*cos + cy
+    return rX, rY
+
+
+##############CITATION###########################
+#################################################
+#The code below is learned (mostly only the mathmatical idea) from
+#https://www.geeksforgeeks.org/perpendicular-distance-between-a-point-and-a-line-in-2-d/
+# some changes/adjustment has been made
+#THIS IS THE BEGINNING OF CITED CODE
+#################################################
+#################################################
+def distancePointToLine(x1, y1, lx1, ly1, lx2, ly2):
+
+    A = ly2 - ly1
+    B = -(lx2 - lx1)
+    C = lx2 * ly1 - lx1 * ly2
+
+    return abs(A*x1 + B*y1 + C)/math.sqrt(A**2 + B**2)
+
+##############CITATION###########################
+#################################################
+#THIS IS THE END OF CITED CODE
+#################################################
+#################################################
+
+def generateRadnBetween(num1,num2):
+    rand = -1
+    while rand<num1:
+        rand = random.random()*num2
+    return rand
