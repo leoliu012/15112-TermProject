@@ -569,8 +569,6 @@ def play_onMousePress(app,mouseX,mouseY):
                 app.paused = not app.paused
                 if not app.initiated:
                     app.path = findUnpackedPaths(app,findPaths(app, app.roads[0], app.roads[1]))
-
-
                 app.initiated = True
             return
 
@@ -812,11 +810,15 @@ def play_redrawAll(app):
     drawRect(830,420,400,110,opacity = 65,fill='white')
     drawLabel("Current elevation:", 920, 490, bold=True, size=15)
     drawLabel(app.currentElevation,920,510,size=20,bold=True)
-    if app.justCome:
-        drawRect(0,0,app.width,app.height,fill = 'white',opacity = app.palyPageOpacity)
 
     drawLabel("Average Time Spent:",920,440,bold=True,size = 15)
     drawLabel(app.aveTime, 920, 465, bold=True, size=20)
+
+    if app.justCome:
+        drawRect(0,0,app.width,app.height,fill = 'white',opacity = app.palyPageOpacity)
+
+    if app.showSettings:
+        drawSettings(app)
 
 def play_onKeyPress(app,key):
     if key == 'up' and app.currentElevation == 'Ground':
@@ -879,6 +881,8 @@ def drawCar(app):
             car.angle = angle
             imageWidth,imageHeight = getImageSize(app.carImages[car.type])
             drawImage(app.carImages[car.type], x1,y1,width = imageWidth//18, height = imageHeight//18, align='center',rotateAngle = car.angle)
+
+def drawSettings(app):
 
 def getCollisionBox(app,car):
     carX,carY = car.pos
