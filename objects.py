@@ -12,6 +12,7 @@ class Road:
         self.trafficLights = []
         self.laneMarkings = []
         self.beginning = beginning
+        self.highlighted = False
 
     def __repr__(self):
         return str(self.points)
@@ -25,12 +26,12 @@ class Road:
 
 
 class TrafficLight:
-    def __init__(self,intersection,status,road=None):
+    def __init__(self,intersection,status,duration = 30,road=None):
         self.intersection = intersection
         self.status = status
         self.yellowDuration = 15 #2
-        self.greenDuration = 30 #0 and 1
-        self.redDuration = 75 #3
+        self.greenDuration = duration #0 and 1
+        self.redDuration = self.greenDuration*2+15 #3
         self.counter = 0
         self.road = None
         self.pos = ((0, 0), (0, 0))
@@ -61,15 +62,15 @@ class TrafficLight:
     def __repr__(self):
         return str(self.pos)
 class Intersection:
-    def __init__(self,points,elevation,type,roads):
+    def __init__(self,points,elevation,type,roads,duration=30):
         self.points = points
         self.elevation = elevation
         self.type = type
         self.roads = roads
         self.trafficLights = []
         if not self.type.isdigit():
-            tl1  = TrafficLight(self,0)
-            tl2  = TrafficLight(self, 3)
+            tl1  = TrafficLight(self,0,duration=duration)
+            tl2  = TrafficLight(self, 3,duration=duration)
             self.trafficLights.append(tl1)
             self.trafficLights.append(tl2)
 

@@ -223,3 +223,45 @@ def generateRadnBetween(num1,num2):
     while rand<num1:
         rand = random.random()*num2
     return rand
+
+
+
+
+##############CITATION###########################
+#################################################
+#The code below is from ChatGPT
+# some changes/adjustment has been made
+#THIS IS THE BEGINNING OF CITED CODE
+#################################################
+#################################################
+def find_perpendicular_point(line, point):
+    line_point1, line_point2 = line
+    x1, y1 = line_point1
+    x2, y2 = line_point2
+    x0, y0 = point
+
+    if not (min(y1, y2) < y0 < max(y1, y2) or min(x1, x2) < x0 < max(x1, x2)):
+        return None
+    # Compute the direction vector of the line
+    dx = x2 - x1
+    dy = y2 - y1
+
+    if dx == 0 and dy == 0:
+        raise ValueError("line_point1 and line_point2 cannot be the same point")
+
+    # Compute the parameter t for the projection
+    numerator = (x0 - x1) * dx + (y0 - y1) * dy
+    denominator = dx * dx + dy * dy
+    t = numerator / denominator
+
+    # Compute the coordinates of the foot
+    x = x1 + t * dx
+    y = y1 + t * dy
+
+    return (x, y)
+
+##############CITATION###########################
+#################################################
+#THIS IS THE END OF CITED CODE
+#################################################
+#################################################
