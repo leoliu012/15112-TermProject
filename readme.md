@@ -75,7 +75,8 @@ cd ./src
 ```
 Then:
 ```commandline
-python ./src/main.py
+python /main.py
 ```
 
-
+## Instructions
+For more detailed instructions, please run 
