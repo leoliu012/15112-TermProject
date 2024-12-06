@@ -1,4 +1,5 @@
 # Welcome to TimeWise Transport!
+![Lines of Code](https://img.shields.io/badge/Lines%20of%20Code-<LOC>-brightgreen)
 
 ## Description: 
 This project is a traffic simulation game where users design a road network to efficiently transport cars to their destinations. 
