@@ -45,7 +45,8 @@ def drawResults(app):
     drawLabel(f"{app.username}, you did it!",200,app.height - 450,size=40,bold=True,align='left')
     drawLabel("Over the course of 60s, you let", 200, app.height - 390, size=20,bold=True,align='left')
     drawLabel(f'{app.carNum} cars', 220, app.height - 350, size=40, bold=True,align='left')
-    drawLabel('safely reached their destinations, with the average time spent:', 200, app.height - 290, size=20, bold=True,align='left')
+    drawLabel('safely reached their destinations, with the average time spent:', 200, app.height - 290,
+              size=20, bold=True,align='left')
     drawLabel(f'{app.aveTime} s!', 220, app.height - 250, size=40, bold=True,align='left')
 
 
@@ -118,7 +119,8 @@ def instructionPanel(app,x,y,message,width=250,showPrev=True,showNext=True,type=
         prevButtonX = x + 30
         prevButtonY =messageStartY + height-80
 
-        drawRect(prevButtonX,prevButtonY,app.inrtruButtonWidth,app.inrtruButtonHeight,fill='honeydew', border='cornflowerBlue', borderWidth=2)
+        drawRect(prevButtonX,prevButtonY,app.inrtruButtonWidth,app.inrtruButtonHeight,fill='honeydew',
+                 border='cornflowerBlue', borderWidth=2)
         drawLabel('Prev', prevButtonX+app.inrtruButtonWidth/2,prevButtonY+app.inrtruButtonHeight/2,size=15,bold=True)
 
     if showNext:
@@ -153,7 +155,8 @@ def drawSettings(app):
 
     drawRect(app.backgroundMusicButtonX+app.settingsButtonWidth-2, app.backgroundMusicButtonY, app.settingsButtonWidth,
              app.settingsButtonHeight, align='center', fill=bgMOffButtonColor,border='cornflowerBlue', borderWidth=4)
-    drawLabel('OFF', app.backgroundMusicButtonX+app.settingsButtonWidth-2, app.backgroundMusicButtonY, bold=True, size=20)
+    drawLabel('OFF', app.backgroundMusicButtonX+app.settingsButtonWidth-2,
+              app.backgroundMusicButtonY, bold=True, size=20)
 
 
     if app.musicEffects:
@@ -168,7 +171,8 @@ def drawSettings(app):
     drawLabel('ON',app.musicEffectsButtonX,app.musicEffectsButtonY,bold=True,size=20)
 
     drawRect(app.musicEffectsButtonX+app.settingsButtonWidth-2, app.musicEffectsButtonY, app.settingsButtonWidth,
-             app.settingsButtonHeight, align='center', fill=musicEffectsOffButtonColor,border='cornflowerBlue', borderWidth=4)
+             app.settingsButtonHeight, align='center', fill=musicEffectsOffButtonColor,
+             border='cornflowerBlue', borderWidth=4)
     drawLabel('OFF', app.musicEffectsButtonX+app.settingsButtonWidth-2, app.musicEffectsButtonY, bold=True, size=20)
 
     if app.carRepr:
@@ -183,7 +187,8 @@ def drawSettings(app):
     drawLabel('ON',app.carReprButtonX,app.carReprButtonY,bold=True,size=20)
 
     drawRect(app.carReprButtonX+app.settingsButtonWidth-2, app.carReprButtonY, app.settingsButtonWidth,
-             app.settingsButtonHeight, align='center', fill=carReprOffButtonColor,border='cornflowerBlue', borderWidth=4)
+             app.settingsButtonHeight, align='center', fill=carReprOffButtonColor,
+             border='cornflowerBlue', borderWidth=4)
     drawLabel('OFF', app.carReprButtonX+app.settingsButtonWidth-2, app.carReprButtonY, bold=True, size=20)
 
 
@@ -199,5 +204,6 @@ def drawSettings(app):
     drawLabel('ON',app.showPathButtonX,app.showPathButtonY,bold=True,size=20)
 
     drawRect(app.showPathButtonX+app.settingsButtonWidth-2, app.showPathButtonY, app.settingsButtonWidth,
-             app.settingsButtonHeight, align='center', fill=showPathOffButtonColor,border='cornflowerBlue', borderWidth=4)
+             app.settingsButtonHeight, align='center', fill=showPathOffButtonColor,
+             border='cornflowerBlue', borderWidth=4)
     drawLabel('OFF', app.showPathButtonX+app.settingsButtonWidth-2, app.showPathButtonY, bold=True, size=20)

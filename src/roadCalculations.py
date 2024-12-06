@@ -50,7 +50,8 @@ def findIntersections(app):
                         if (getDistance(cx,cy,x1r1,y1r1) > 20 and getDistance(cx,cy,x2r1,y2r1) > 20 and
                             getDistance(cx,cy,x1r2,y1r2) > 20 and getDistance(cx,cy,x2r2,y2r2) > 20):
                             if point and road1.elevation == road2.elevation:
-                                inter = Intersection(point, road1.elevation, '4-way', (road1, road2),duration=app.tlDuration)
+                                inter = Intersection(point, road1.elevation, '4-way',
+                                                     (road1, road2),duration=app.tlDuration)
                                 road2.addIntersection(inter)
                                 road1.addIntersection(inter)
                                 app.intersections.add(inter)
@@ -73,7 +74,8 @@ def findIntersections(app):
         if len(roadsAtPoint) > 1:
             x, y = point
             interType = len(roadsAtPoint)
-            inter = Intersection((x, y), roadsAtPoint[0].elevation, str(interType), roadsAtPoint,duration=app.tlDuration)
+            inter = Intersection((x, y), roadsAtPoint[0].elevation, str(interType),
+                                 roadsAtPoint,duration=app.tlDuration)
             for road in roadsAtPoint:
                 road.addIntersection(inter)
             app.intersections.add(inter)
@@ -242,7 +244,6 @@ def findEdgeIntersections(app):
 def sortRoadsElevation(app):
     retGround = []
     retBridge = []
-    print(app.roads)
     for road in app.roads:
         if road.elevation == 'Bridge':
             retBridge.append(road)

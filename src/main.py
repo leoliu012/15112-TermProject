@@ -879,11 +879,9 @@ def createButtons(app):
 
 
 def play_onMousePress(app,mouseX,mouseY):
-    print(app.roads)
     if (not app.showSettings and not app.sessionFinished and
             not app.showInstructions):
         app.roads = sortRoadsElevation(app)
-        print(app.roads)
         if app.isDrawing or app.currentMode and not app.showTlPanel:
             app.roadsChanged = True
             app.edgeIntersections = findEdgeIntersections(app)
@@ -1194,6 +1192,7 @@ def resetPlay(app):
     app.laneMarkingInterval = 10
     app.showGrid = True
     app.roadsCoordinates = []
+    app.nextInitiated = False
     for i in range(0, app.height, 4):
         row = []
         for j in range(0, app.width, 4):
