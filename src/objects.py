@@ -15,7 +15,7 @@ class Road:
         self.highlighted = False
 
     def __repr__(self):
-        return str(self.points)
+        return f'Road("{self.type}", {self.points}, "{self.elevation}")'
 
 
     def addIntersection(self,intersection):

@@ -10,18 +10,15 @@ def drawRoad(app,road):
         #chekc if drawing is finished
         if len(points) >= 2:
             drawStraightRoad(app,points[0], points[1], elevation,road)
-            if app.isDrawing:
+            if app.isDrawing or app.shortCutMode:
                 road.laneMarkings = findLaneMarking(app, road.points)
                 drawLaneMarking(app, road.laneMarkings)
             else:
                 drawLaneMarking(app, road.laneMarkings)
 
-
     if roadType == 'Curved':
         if len(points) == 3:
             drawCurvedRoad(app,points[0], points[1], points[2], elevation,road)
-
-
             return
         elif len(points) == 2:
             drawCurvedRoad(app,points[0], points[1], points[1], elevation,road)
@@ -100,7 +97,7 @@ def drawCurvedRoad(app, start, mid, end, elevation,road):
     drawCircle(start[0], start[1], app.roadWidth / 2, fill=color, opacity=app.roadOpacity)
     drawCircle(end[0],end[1], app.roadWidth / 2, fill=color, opacity=app.roadOpacity)
 
-    if app.isDrawing:
+    if app.isDrawing or app.shortCutMode:
         road.laneMarkings = findLaneMarking(app, points)
         drawLaneMarking(app, road.laneMarkings)
     else:

@@ -1,4 +1,3 @@
-from practicalFunctions import *
 from cmu_graphics import  *
 from objects import *
 def getRoadLineParts(road):
@@ -53,7 +52,6 @@ def findIntersections(app):
                                 road2.addIntersection(inter)
                                 road1.addIntersection(inter)
                                 app.intersections.add(inter)
-
 
 
     pointToRoads = {}
@@ -253,6 +251,7 @@ def findEdgeIntersections(app):
 def sortRoadsElevation(app):
     retGround = []
     retBridge = []
+    print(app.roads)
     for road in app.roads:
         if road.elevation == 'Bridge':
             retBridge.append(road)

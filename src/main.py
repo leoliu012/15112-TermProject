@@ -6,7 +6,6 @@ from roadCalculations import *
 
 from objects import *
 from practicalFunctions import *
-import math
 import random
 
 ##
@@ -16,8 +15,11 @@ import random
 #"ARE YOUR READY" Title generated at: "https://www.textstudio.com/"
 #"Difficulty Level" Title generated at: "https://www.textstudio.com/"
 #"Username" Title generated at: "https://www.textstudio.com/"
+#"History" Title generated at: "https://www.textstudio.com/"
 #"Settings" Button: https://www.google.com/url?sa=i&url=https%3A%2F%2Fdepositphotos.com%2Fphoto%2Fsettings-button-41886883.html&psig=AOvVaw0cnc_XdL26flFumwKCCoC-&ust=1733259661859000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIja09H9iYoDFQAAAAAdAAAAABAE
 #Button background: https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Fso%2F2d-game-button&psig=AOvVaw11TPQ7pAeBcv6ewxS0LY9I&ust=1733191210619000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjUyMX-h4oDFQAAAAAdAAAAABAJ
+#Bckground music: https://music.163.com/song?id=2154125389&userid=1662215549
+#Button click effect: https://creatorassets.com/a/button-sound-effects
 ##
 
 def onAppStart(app):
@@ -112,8 +114,8 @@ def onAppStart(app):
     app.imagesPlay = [Image.open(url) for url in app.imageUrlsPlay]
     app.imagesPlay = [CMUImage(image) for image in app.imagesPlay]
     app.playInd = 0
+    app.shortCutMode = False
     app.ranking = []
-    print(app.imageUrlsPlay)
 
 def intro_onAppStart(app):
     introURL = '../assets/backgrounds/intro.jpg'
@@ -144,6 +146,102 @@ def intro_onAppStart(app):
     app.initiated = False
     app.introCounter = 0
 
+def intro_onKeyPress(app,key):
+    #Normal path finding and shows path optimal path selecting
+    if key == 'a':
+        app.roads = [Road('Straight', [(670.0, 0), (670.0, 150)],  "Ground"),
+                     Road('Straight', [(310.0, 0), (310.0, 150.0)],  "Ground"),
+                     Road('Straight', [(490.0, 0), (490.0, 150.0)],  "Ground"),
+                     Road('Straight', [(1000, 320.0), (850.0, 320.0)], "Ground"),
+                     Road('Curved', [(670, 150), (669, 324), (850, 320.0)], "Ground"),
+                     Road('Straight', [(490, 150), (670.0, 150.0)], "Ground"),
+                     Road('Straight', [(490, 150), (492.0, 274.0)], "Ground"),
+                     Road('Straight', [(491.0, 274.0), (307, 274)],  "Ground"),
+                     Road('Straight', [(307, 274), (310.0, 150.0)],  "Ground"),
+                     Road('Straight', [(310, 150), (490.0, 150.0)],  "Ground"),
+                     Road('Straight', [(491, 274), (743, 427)], "Ground"),
+                     Road('Straight', [(743, 427), (862, 427)], "Ground"),
+                     Road('Straight', [(862, 427), (850.0, 320.0)],  "Ground")]
+        findIntersections(app)
+        app.showPath = True
+        app.shortCutMode = True
+        setActiveScreen('play')
+
+    #Curved roads, bridge, and path finding and optimal path selecting
+    elif key == 'b':
+        app.roads = [Road('Straight', [(220.0, 600), (220.0, 450)], "Ground"),
+                     Road('Straight', [(1000, 380.0), (850.0, 380.0)], "Ground"),
+                     Road('Straight', [(1000, 240.0), (850, 240.0)], "Ground"),
+                     Road('Straight', [(1000, 330.0), (850.0, 330.0)], "Ground"),
+                     Road('Straight', [(1000, 180.0), (850, 180.0)], "Ground"),
+                     Road('Curved', [(850.0, 180.0), (226, 174), (220.0, 450.0)], "Ground"),
+                     Road('Straight', [(850, 180), (850, 107.0)], "Ground"),
+                     Road('Straight', [(850, 107), (546.0, 108.0)], "Ground"),
+                     Road('Curved', [(850, 330), (552, 329), (379.00000000000006, 454.0)], "Ground"),
+                     Road('Straight', [(379, 454), (220.0, 450.0)], "Ground"),
+                     Road('Straight', [(850, 240), (850, 330.0)], "Ground"),
+                     Road('Curved', [(379, 454), (679, 554), (860.0, 518.0)], "Ground"),
+                     Road('Straight', [(860, 518), (850.0, 380.0)], "Ground"),
+                     Road('Curved', [(546, 108), (552, 384), (850, 380.0)], "Bridge")]
+        findIntersections(app)
+        app.showPath = True
+        app.diffLevel = 5
+        app.shortCutMode = True
+        setActiveScreen('play')
+    # Curved roads, bridge, and path finding and optimal path selecting
+    elif key == 'c':
+        app.roads = [Road("Straight", [(640.0, 0), (640.0, 150.0)], "Ground"),
+                     Road("Straight", [(720.0, 0), (720.0, 150.0)], "Ground"),
+                     Road("Straight", [(1000, 230.0), (850.0, 230.0)], "Ground"),
+                     Road("Straight", [(1000, 390.0), (850, 390.0)], "Ground"),
+                     Road("Straight", [(300.0, 600), (300.0, 450.0)], "Ground"),
+                     Road("Straight", [(1000, 450.0), (850.0, 450.0)], "Ground"),
+                     Road("Curved", [(640, 150), (644, 453), (850, 450.0)], "Ground"),
+                     Road("Curved", [(700, 498), (613, 446), (569.0, 365.0)], "Ground"),
+                     Road("Straight", [(561.1567267683772, 344.0846047156727), (542.0, 293.0)], "Ground"),
+                     Road("Curved", [(542, 293), (513, 154), (640.0, 150.0)], "Ground"),
+                     Road("Straight", [(720, 150), (725.9999999999999, 323.0)], "Ground"),
+                     Road("Straight", [(726.0, 323.0), (837, 322.0)], "Ground"),
+                     Road("Straight", [(837, 322), (850.0, 450.0)], "Ground"),
+                     Road("Straight", [(569, 365), (184.0, 363.0)], "Ground"),
+                     Road("Straight", [(184, 363), (186, 460)], "Ground"),
+                     Road("Straight", [(186, 460), (300.0, 450.0)], "Ground"),
+                     Road("Straight", [(837, 322), (850.0, 230.0)], "Ground"),
+                     Road("Curved", [(300, 450), (302, 224), (850, 230.0)], "Bridge"),
+                     Road("Curved", [(850.0, 390.0), (590, 394), (300.0, 450.0)], "Bridge"),
+                     Road("Curved", [(720, 150.0), (902, 149), (932.0, 267.0)], "Bridge"),
+                     Road("Curved", [(932, 267), (941, 348), (891, 487)], "Bridge"),
+                     Road("Curved", [(891, 487), (857, 567), (700, 498)], "Bridge"),
+                     Road("Straight", [(726, 323), (569.0, 365.0)], "Bridge")]
+        findIntersections(app)
+        app.showPath = True
+        app.shortCutMode = True
+        app.diffLevel = 6
+        app.carRepr = False
+        setActiveScreen('play')
+
+    # Path finding and optimal path selecting
+    elif key == 'd':
+        app.roads = [Road("Straight", [(0, 260.0), (150, 260.0)], "Ground"),
+                     Road("Straight", [(1000, 210.0), (850, 210.0)], "Ground"),
+                     Road("Straight", [(0, 190.0), (150, 190.0)], "Ground"),
+                     Road("Straight", [(150, 190), (441.0, 110.0)], "Ground"),
+                     Road("Straight", [(150, 260), (433.0, 334.0)], "Ground"),
+                     Road("Straight", [(433, 334), (837, 334)], "Ground"),
+                     Road("Straight", [(837, 334), (849.9999999999998, 210.0)], "Ground"),
+                     Road("Straight", [(849.9999999999999, 210.0), (828, 96)], "Ground"),
+                     Road("Straight", [(828, 96), (441.0, 110.0)], "Ground"),
+                     Road("Straight", [(850, 210), (444, 211)], "Ground"),
+                     Road("Straight", [(444, 211), (433.0, 334.0)], "Ground"),
+                     Road("Straight", [(444, 211), (441.0, 110.0)], "Ground")]
+        findIntersections(app)
+        app.showPath = True
+        app.shortCutMode = True
+        app.diffLevel = 6
+        app.carRepr = False
+        setActiveScreen('play')
+
+
 def intro_redrawAll(app):
     drawImage(app.introImage,0, 0, width = app.width, height = app.height)
     titleWidth, titleHeight = getImageSize(app.titleImage)
@@ -156,7 +254,6 @@ def intro_redrawAll(app):
             buttonY = button.y
 
         drawImage(app.buttonImage,button.x, buttonY, width = 150, height = 50)
-
         drawLabel(button.label, button.x + 150 / 2, buttonY + 50 / 2, size=16,bold=True)
 
     if app.currOnButton == app.startButton:
@@ -210,11 +307,13 @@ def intro_onMousePress(app, mouseX, mouseY):
                             for each in line.split(' '):
                                 temp.append(each)
                             app.ranking.append(temp)
+
                         ###################################################
                         #Learned this from:
                         #https://stackoverflow.com/questions/18563680/how-to-sort-a-2d-list
                         ###################################################
                         app.ranking = sorted(app.ranking, key=lambda x: float(x[2]), reverse=True)
+
                         app.buttonSound.play()
                     setActiveScreen("history")
                 elif button.label == "Quit":
@@ -279,9 +378,6 @@ def intro_onStep(app):
         if app.introCounter > 40:
             setActiveScreen("difficulty")
 
-
-
-
 def history_onAppStart(app):
     backButtonWidth = 100
     backButtonHeight = 40
@@ -308,7 +404,6 @@ def history_redrawAll(app):
     drawLabel("Difficulty", 600, 140, size=30,bold=True)
     drawLabel("Score", 800, 140, size=30,bold=True)
 
-    print(app.ranking)
     if len(app.ranking)<=10:
         for i in range(len(app.ranking)):
             user = app.ranking[i]
@@ -409,9 +504,6 @@ def difficulty_onAppStart(app):
     app.nextPageOpacity = 0
     app.diffCounter = 0
 
-
-
-
 def difficulty_redrawAll(app):
     drawImage(app.introImage, 0, 0, width=app.width, height=app.height)
     dflTitleWidth, dflTtitleHeight = getImageSize(app.DFLevelImage)
@@ -432,8 +524,6 @@ def difficulty_redrawAll(app):
             height=dflTtitleHeight / 4)
 
     drawLabel(app.username, app.usrBoxX + 110, app.usrBoxY + 40, bold=True, size=25,)
- 
-
 
     if app.currOnButton == app.startButton:
         stbuttonY = app.startButton.y - 5
@@ -489,6 +579,7 @@ def difficulty_onMousePress(app, mouseX, mouseY):
         app.nextInitiated = True
         if not app.username:
             app.username = 'Anonym'
+
         app.roads = []
         top = []
         right = []
@@ -546,7 +637,6 @@ def difficulty_onMousePress(app, mouseX, mouseY):
         intro_onAppStart(app)
         setActiveScreen("intro")
 
-
 def difficulty_onMouseMove(app, mouseX, mouseY):
     app.currOnButton = None
     if (app.startButton.x <= mouseX <= app.startButton.x + app.startButton.width and
@@ -567,11 +657,6 @@ def difficulty_onKeyPress(app,key):
             app.username += key
         else:
             app.username = app.username[:-1]
-
-
-
-
-
 
 def play_onAppStart(app):
 
@@ -623,11 +708,6 @@ def play_onAppStart(app):
     app.carImageWidth /= 18
     app.carImageHeight /= 18
     app.cars = []
-    # app.carImages = []
-    # for each in carImages:
-    #     resized = each.resize((each.width // 14, each.height // 14))
-    #     resized = CMUImage(resized)
-    #     app.carImages.append(resized)
     app.carRoadCurvedUnpacked = False
 
     app.cursorX = 0
@@ -770,9 +850,11 @@ def createButtons(app):
 
 
 def play_onMousePress(app,mouseX,mouseY):
+    print(app.roads)
     if (not app.showSettings and not app.sessionFinished and
             not app.showInstructions):
         app.roads = sortRoadsElevation(app)
+        print(app.roads)
         if app.isDrawing or app.currentMode and not app.showTlPanel:
             app.roadsChanged = True
             app.edgeIntersections = findEdgeIntersections(app)
@@ -1049,8 +1131,6 @@ def play_onMousePress(app,mouseX,mouseY):
                     setActiveScreen('intro')
                     resetPlay(app)
 
-
-
     if app.sessionFinished:
         if (app.returnMenuButtonX - app.resultsButtonWidth / 2 <= mouseX <=
                 app.returnMenuButtonX + app.resultsButtonWidth * 1.5 and
@@ -1073,6 +1153,7 @@ def play_onMousePress(app,mouseX,mouseY):
             resetPlay(app)
 
 def resetPlay(app):
+    app.shortCutMode = False
     app.score = 0
     app.tlDuration = 30
     app.showTlPanel = False
@@ -1449,6 +1530,7 @@ def play_redrawAll(app):
                              True,'play')
         if app.justCome:
             drawRect(0, 0, app.width, app.height, fill='white', opacity=app.palyPageOpacity)
+
     if app.showTlPanel:
         drawTlPanel(app)
 
@@ -1472,9 +1554,7 @@ def play_onStep(app):
 
     if not app.paused:
         if app.counter % 40 == 0:
-            check = generateCars(app)
-            if not check:
-                app.paused = True
+            generateCars(app)
         app.counter += 1
         trafficLightsToggle(app)
         updateCarMove(app)
@@ -1512,8 +1592,6 @@ def play_onMouseDrag(app,mouseX,mouseY):
         app.controlBallX = mouseX
 
         app.tlDuration = int((mouseX-350)/3.5 + 30)
-
-        print(app.tlDuration)
 
 #############
 #Learned this from:

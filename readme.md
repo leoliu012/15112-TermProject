@@ -119,3 +119,14 @@ NOTE: This action only effective to roads that haven't been drawn yet/
 ### Run the simulation
 Once the user have designed the road network, click the 'Finished' button to begin the simulation.
 
+## Shortcut Commands:
+The shortcut command are for developing and testing purposes. These commands are only effective at the intro menu page.
+After each testing run, please restart the app to prevent unintended errors.
+
+| Key                               | Description                                                                                                                                                     |
+|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| a                                 | Normal path finding and shows path optimal path selecting.                                                                                                      |
+| b                                 | Curved roads, bridge, path finding, path display (adjustable in settings), and optimal path selecting                                                           |
+| c                                 | More complex curved roads, bridge, path finding, path display (adjustable in settings), car representation (adjustable in settings), and optimal path selecting |
+| d                                 | Path finding and optimal path selecting                                                                |
+

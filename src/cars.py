@@ -30,8 +30,6 @@ def generateCars(app):
 
 
         paths = findUnpackedPaths(app,findPaths(app, startRoad, endRoad))
-        if paths == []:
-            return None
         path = sortPath(app,paths)[0]
         shiftVal = app.roadWidth / 3
         car = Car(carInd, app.roads[1], app.roads[0].points[1],path,-shiftVal)
@@ -59,8 +57,6 @@ def drawCar(app):
                     carColor = 'darkRed'
                 drawRect(x1,y1,app.carImageWidth, app.carImageHeight,
                       align='center',rotateAngle = car.angle,fill=carColor)
-            for x, y in collisionBox:
-                drawCircle(x, y, 2)
 
 def getCollisionBox(app,car):
     carX,carY = car.pos
@@ -164,22 +160,6 @@ def updateCarMove(app):
                 anyInterBetween = False
                 # If there's no intersections between the current location and currDestination
                 for inter in car.currRoad.intersections:
-                    # if (car.currPointInd + 1) < len(car.path):
-                    #     nextRoad = car.path[car.currPointInd + 1][0]
-                    #     print(car.currRoad.points[-1])
-                    #     print(car.currRoad.points[0])
-                    #     print(inter.points)
-                    #     if inter.type == '4' and (car.currRoad.points[-1] == inter.points or car.currRoad.points[0] == inter.points):
-                    #         anyInterBetween = False
-                    #         currRoadInd = inter.roads.index(car.currRoad)
-                    #         nextRoadInd = inter.roads.index(nextRoad)
-                    #         if currRoadInd+1 == nextRoadInd:
-                    #             car.nextMove = 'Right'
-                    #         elif currRoadInd+1 < nextRoadInd:
-                    #             car.nextMove = None
-                    #         elif currRoadInd-1 == nextRoadInd:
-                    #             car.nextMove = 'Left'
-                    #         break
 
                     interX, interY = inter.points
                     dX, dY = car.currDestination
@@ -345,7 +325,7 @@ def unPackPath(app, path):
         road2, point2 = path[ind+1]
         if road1.type == 'Curved':
             start, mid, end = road1.points
-            numSteps = 20
+            numSteps = 10
             points = []
             for i in range(numSteps + 1):
                 i /= numSteps
@@ -396,7 +376,6 @@ def sortPath(app,paths):
     pathDistanceDict = sortAmountCarsUsingPath(app, paths,pathDistanceDict)
     ret = []
     shortedPath = 0
-    print(pathDistanceDict)
     shortedPathLen = pathDistanceDict[shortedPath]
     for ind in pathDistanceDict:
         if pathDistanceDict[ind] > shortedPath:
