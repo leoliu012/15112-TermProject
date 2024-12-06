@@ -1,5 +1,5 @@
 # Welcome to TimeWise Transport!
-![Lines of Code](https://github.com/leoliu012/15112-TermProject/raw/badge/README_badge.md)
+![](https://tokei.rs/b1/github/leoliu012/15112-TermProject)
 
 ## Description: 
 This project is a traffic simulation game where users design a road network to efficiently transport cars to their destinations. 
