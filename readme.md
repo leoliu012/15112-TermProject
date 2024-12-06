@@ -36,7 +36,18 @@ Setting up a virtual environment is recommended
 ```commandline
 python -m venv venv
 ```
+Then activate the virtual environment:
+#### On Windows:
+```commandline
+venv\Scripts\activate
+```
+#### On MacOS/Linux:
+```commandline
+source venv/bin/activate
+```
 
+### Project Setup
+Clone the repository:
 ```commandline
 git clone https://github.com/leoliu012/15112-TermProject
 ```
@@ -59,6 +70,10 @@ pip install cmu_graphics Pillow
 
 ### Running the game
 To run the game, run:
+```commandline
+cd ./src
+```
+Then:
 ```commandline
 python ./src/main.py
 ```
