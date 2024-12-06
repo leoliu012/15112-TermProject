@@ -30,13 +30,37 @@ macOS 10.13+
 
 Python 3.6-3.11
 
-### Required Libraries
-cmu-graphics package is included in the folder, in most of the cases, the only required additional library is Pillow.
-To install Pillow, run:
+## Project Installation
+### Setup Virtual Environment
+Setting up a virtual environment is recommended
 ```commandline
-pip install cmu_graphics Pillow
+python -m venv venv
 ```
-However, if the downloaded package does not include cmu-graphics, run the command below under this project directory:
+
+```commandline
+git clone https://github.com/leoliu012/15112-TermProject
+```
+
+```commandline
+cd 15112-TermProject
+```
+
+### Required Libraries
+cmu-graphics package and Pillow are two required libraries for this project.
+
+Under the directory of this project, run:
 ```commandline
 pip install -r requirements.txt
 ```
+Or:
+```commandline
+pip install cmu_graphics Pillow
+```
+
+### Running the game
+To run the game, run:
+```commandline
+python ./src/main.py
+```
+
+
