@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e36762a-6ef8-4f75-8b45-ecf2e823c7f6" name="Changes" comment="Bug fixed and small improvements">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/savedInfo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/savedInfo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cars.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cars.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/carsMoving.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/roadCalculations.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/roadCalculations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/roadDrawHelpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/roadDrawHelpers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +129,7 @@
       <workItem from="1733255607694" duration="41246000" />
       <workItem from="1733384860264" duration="23539000" />
       <workItem from="1733452714889" duration="539000" />
-      <workItem from="1733453670001" duration="17020000" />
+      <workItem from="1733453670001" duration="17446000" />
     </task>
     <task id="LOCAL-00001" summary="Tried GitHub">
       <option name="closed" value="true" />
@@ -346,7 +339,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733471725154</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Bug fixed and small improvements">
+      <option name="closed" value="true" />
+      <created>1733480350125</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1733480350125</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

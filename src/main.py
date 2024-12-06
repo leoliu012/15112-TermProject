@@ -1,3 +1,28 @@
+#####################################################
+## Author: Xinrui (Leo) Liu
+## CMU 2024 15-112 Term Project
+## Section: K
+#####################################################
+
+
+###############################################
+################# CITATIONS ###################
+###############################################
+######## Car images: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fillustrations%2Fcar-top-view&psig=AOvVaw2X3GXjKWFy73DUyrCA1lRk&ust=1732922954816000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDF0JqXgIoDFQAAAAAdAAAAABAE
+######## Bulldoze sign: https://www.google.com/url?sa=i&url=https%3A%2F%2Fdepositphotos.com%2Fvector%2Fbulldozer-danger-sign-or-symbol-text-do-not-enter-work-area-137213888.html&psig=AOvVaw12XVTRP41F261VeAQafj0D&ust=1733115705195000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLiCwqTlhYoDFQAAAAAdAAAAABAJ
+######## "TimeWise Transport" Title generated at: "https://www.textstudio.com/"
+######## "ARE YOUR READY" Title generated at: "https://www.textstudio.com/"
+######## "Difficulty Level" Title generated at: "https://www.textstudio.com/"
+######## "Username" Title generated at: "https://www.textstudio.com/"
+######## "History" Title generated at: "https://www.textstudio.com/"
+######## "Settings" Button: https://www.google.com/url?sa=i&url=https%3A%2F%2Fdepositphotos.com%2Fphoto%2Fsettings-button-41886883.html&psig=AOvVaw0cnc_XdL26flFumwKCCoC-&ust=1733259661859000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIja09H9iYoDFQAAAAAdAAAAABAE
+######## Button background: https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Fso%2F2d-game-button&psig=AOvVaw11TPQ7pAeBcv6ewxS0LY9I&ust=1733191210619000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjUyMX-h4oDFQAAAAAdAAAAABAJ
+######## Bckground music: https://music.163.com/song?id=2154125389&userid=1662215549
+######## Button click effect: https://creatorassets.com/a/button-sound-effects
+###############################################
+###############################################
+###############################################
+
 from cmu_graphics import  *
 from drawHelpers import *
 from cars import*
@@ -7,20 +32,6 @@ from roadCalculations import *
 from objects import *
 from practicalFunctions import *
 import random
-
-##
-#Car images: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fillustrations%2Fcar-top-view&psig=AOvVaw2X3GXjKWFy73DUyrCA1lRk&ust=1732922954816000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDF0JqXgIoDFQAAAAAdAAAAABAE
-#Bulldoze sign: https://www.google.com/url?sa=i&url=https%3A%2F%2Fdepositphotos.com%2Fvector%2Fbulldozer-danger-sign-or-symbol-text-do-not-enter-work-area-137213888.html&psig=AOvVaw12XVTRP41F261VeAQafj0D&ust=1733115705195000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLiCwqTlhYoDFQAAAAAdAAAAABAJ
-#"TimeWise Transport" Title generated at: "https://www.textstudio.com/"
-#"ARE YOUR READY" Title generated at: "https://www.textstudio.com/"
-#"Difficulty Level" Title generated at: "https://www.textstudio.com/"
-#"Username" Title generated at: "https://www.textstudio.com/"
-#"History" Title generated at: "https://www.textstudio.com/"
-#"Settings" Button: https://www.google.com/url?sa=i&url=https%3A%2F%2Fdepositphotos.com%2Fphoto%2Fsettings-button-41886883.html&psig=AOvVaw0cnc_XdL26flFumwKCCoC-&ust=1733259661859000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIja09H9iYoDFQAAAAAdAAAAABAE
-#Button background: https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Fso%2F2d-game-button&psig=AOvVaw11TPQ7pAeBcv6ewxS0LY9I&ust=1733191210619000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjUyMX-h4oDFQAAAAAdAAAAABAJ
-#Bckground music: https://music.163.com/song?id=2154125389&userid=1662215549
-#Button click effect: https://creatorassets.com/a/button-sound-effects
-##
 
 def onAppStart(app):
     app.instruFromMenu = False

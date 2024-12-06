@@ -1,3 +1,9 @@
+#####################################################
+## Author: Xinrui (Leo) Liu
+## CMU 2024 15-112 Term Project
+## Section: K
+#####################################################
+
 from cmu_graphics import  *
 from practicalFunctions import *
 from objects import *
@@ -23,8 +29,6 @@ def drawRoad(app,road):
         elif len(points) == 2:
             drawCurvedRoad(app,points[0], points[1], points[1], elevation,road)
 
-
-
 def drawStraightRoad(app,start,end,elevation,road):
     x1,y1 = start
     x2,y2 = end
@@ -33,11 +37,7 @@ def drawStraightRoad(app,start,end,elevation,road):
     else:
         color = getElevationColor(elevation)
 
-
     drawLine(x1,y1,x2,y2,fill = color,lineWidth = app.roadWidth, opacity = app.roadOpacity)
-
-
-
     drawCircle(x1,y1, app.roadWidth/2, fill=color,  opacity = app.roadOpacity)
     drawCircle(x2,y2, app.roadWidth/2, fill=color,  opacity = app.roadOpacity)
 
@@ -92,8 +92,6 @@ def drawCurvedRoad(app, start, mid, end, elevation,road):
     for x,y in points:
         drawCircle(x, y, app.roadWidth / 2, fill=color, opacity=app.roadOpacity)
 
-
-
     drawCircle(start[0], start[1], app.roadWidth / 2, fill=color, opacity=app.roadOpacity)
     drawCircle(end[0],end[1], app.roadWidth / 2, fill=color, opacity=app.roadOpacity)
 
@@ -115,7 +113,6 @@ def findLaneMarking(app,points):
             length = ((x1-x2)**2 + (y1-y2)**2)**0.5
             segmentLengths.append(length)
             totalLength += length
-
 
         dashPos = []
         distance = 0
@@ -140,14 +137,11 @@ def drawLaneMarking(app,dashPos):
         drawLine(dashPos[i][0],dashPos[i][1],
                  dashPos[i+1][0],dashPos[i+1][1], fill='white', lineWidth=2)
 
-
-
 def getElevationColor(elevation):
     if elevation == 'Ground':
         return 'gray'
     elif elevation == 'Bridge':
         return 'dimGray'
-
     else:
         return 'gray'
 
@@ -176,7 +170,6 @@ def drawIntersectMarking(app):
                         x2, y2 = road.points[1]
                 lx,ly = findPointAtDistance(x1, y1, x2, y2, 20)
                 drawLine(x1, y1,lx,ly,fill='dimGray',lineWidth = app.roadWidth+3)
-
 
     visited = set()
     for each in app.edgeIntersections:
@@ -216,9 +209,6 @@ def drawIntersectMarking(app):
                 polygonXY.extend([x, y])
 
             drawPolygon(*polygonXY, fill='gray')
-
-
-
 
 def drawIntersectMarkingWithTL(app):
     visited = set()
@@ -271,7 +261,6 @@ def drawIntersectMarkingWithTL(app):
             midx, midy = findMidPoint((x1, y1), (x2, y2))
 
             drawTrafficLights(app, (midx, midy), (x1, y1), 3, inter,(x2,y2))
-
 
 def drawTrafficLightsForMagCursor(app):
     visited = set()
@@ -331,9 +320,7 @@ def drawTrafficLightsForMagCursor(app):
 
                 drawTrafficLights(app, pos1, pos2, i,inter,pos3)
 
-
 def drawTrafficLights(app,pos1,pos2,i,inter,pos3):
-
     x1, y1 = pos1  # mid point
     x2, y2 = pos2  # one edge
 
@@ -439,7 +426,6 @@ def magneticCursor(app,mouseX,mouseY):
                     app.cursorUserControlled = False
                     return
     app.cursorUserControlled = True
-
 
 def trafficLightsToggle(app):
     for inter in app.intersections:

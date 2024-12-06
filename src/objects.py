@@ -1,3 +1,9 @@
+#####################################################
+## Author: Xinrui (Leo) Liu
+## CMU 2024 15-112 Term Project
+## Section: K
+#####################################################
+
 from practicalFunctions import *
 
 class Road:

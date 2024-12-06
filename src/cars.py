@@ -1,4 +1,9 @@
-from practicalFunctions import *
+#####################################################
+## Author: Xinrui (Leo) Liu
+## CMU 2024 15-112 Term Project
+## Section: K
+#####################################################
+
 from cmu_graphics import  *
 from objects import *
 import time

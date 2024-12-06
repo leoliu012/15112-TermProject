@@ -1,3 +1,9 @@
+#####################################################
+## Author: Xinrui (Leo) Liu
+## CMU 2024 15-112 Term Project
+## Section: K
+#####################################################
+
 import math
 from PIL import Image
 import random

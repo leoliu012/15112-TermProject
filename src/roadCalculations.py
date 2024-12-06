@@ -1,3 +1,9 @@
+#####################################################
+## Author: Xinrui (Leo) Liu
+## CMU 2024 15-112 Term Project
+## Section: K
+#####################################################
+
 from cmu_graphics import  *
 from objects import *
 def getRoadLineParts(road):
@@ -22,11 +28,7 @@ def getRoadLineParts(road):
     return lines
 
 
-
-
 def findIntersections(app):
-
-
     intersections = set()
     for i in range(len(app.roads)):
         road1 = app.roads[i]
@@ -52,8 +54,6 @@ def findIntersections(app):
                                 road2.addIntersection(inter)
                                 road1.addIntersection(inter)
                                 app.intersections.add(inter)
-
-
     pointToRoads = {}
 
     for road in app.roads:
@@ -96,7 +96,6 @@ def findIntersections(app):
         app.intersections = set(intersections)
     return intersections
 
-
 def checkIntersectsCurve(app):
     for i in range(len(app.roads)):
         road1 = app.roads[i]
@@ -119,11 +118,7 @@ def checkIntersectsCurve(app):
                         if point and road1.elevation == road2.elevation:
                             if app.roads[i].type == 'Curved' or app.currentRoad.type == 'Curved':
                                 return i
-
     return None
-
-
-
 
 def getRoadEdgeLines(app, road):
     leftLines = []
@@ -160,7 +155,6 @@ def getRoadEdgeLines(app, road):
     elif road.type == 'Curved':
         #check if finished drawing
         if len(road.points) < 3:
-
             return [], []
 
         points = []
@@ -207,8 +201,6 @@ def getRoadEdgeLines(app, road):
     return leftLines, rightLines
 
 
-
-
 def findEdgeIntersections(app):
     intersections = []
 
@@ -239,7 +231,6 @@ def findEdgeIntersections(app):
                         edgeIntersects.append(point)
             if len(edgeIntersects) >= 4:
                 edgeIntersects = edgeIntersects[:4]
-
                 intersectionSet = road1.intersections & road2.intersections
                 if intersectionSet:
                     inter = intersectionSet.pop()
@@ -258,6 +249,7 @@ def sortRoadsElevation(app):
         elif road.elevation == 'Ground':
             retGround.append(road)
     return retGround + retBridge
+
 def sortRoads(inter):
     anglePoints = []
     cX,cY = inter.points
@@ -273,12 +265,10 @@ def sortRoads(inter):
         for j in range(i + 1, len(anglePoints)):
             if anglePoints[i][0] > anglePoints[j][0]:
                 anglePoints[i], anglePoints[j] = anglePoints[j], anglePoints[i]
-
     sorted = []
     for angle, road in anglePoints:
         sorted.append(road)
     return sorted
-
 
 def checkCrossingOutlets(app,currentRoad):
     if currentRoad.type == 'Straight' or currentRoad.type == 'Curved':
