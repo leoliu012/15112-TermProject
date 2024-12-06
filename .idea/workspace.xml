@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e36762a-6ef8-4f75-8b45-ecf2e823c7f6" name="Changes" comment="Bug fixed and small improvements" />
+    <list default="true" id="3e36762a-6ef8-4f75-8b45-ecf2e823c7f6" name="Changes" comment="Bug fixed and small improvements">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,6 +129,7 @@
       <workItem from="1733384860264" duration="23539000" />
       <workItem from="1733452714889" duration="539000" />
       <workItem from="1733453670001" duration="19110000" />
+      <workItem from="1733482466704" duration="282000" />
     </task>
     <task id="LOCAL-00001" summary="Tried GitHub">
       <option name="closed" value="true" />
@@ -400,7 +403,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733482408820</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Bug fixed and small improvements">
+      <option name="closed" value="true" />
+      <created>1733482682391</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1733482682391</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

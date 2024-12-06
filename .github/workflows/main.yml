@@ -22,10 +22,10 @@ jobs:
         id: badge
         with:
           debug: true
-          directory: ./src
-          badge: ./badge.svg
+          directory: ./src  # Adjust based on where your source code resides
+          badge: ./output/badge.svg
           patterns: '**/*.py'  # Adjust patterns based on your project's language
-          ignore: 'venv/|node_modules/|tests/'
+          ignore: 'venv/|node_modules/|tests/'  # Patterns to ignore
 
       # Step 3: Commit and push the badge to a separate branch (e.g., 'badge')
       - name: Commit LOC Badge
@@ -35,8 +35,8 @@ jobs:
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b badge
-          mv badge.svg README_badge.svg  # Rename if necessary
+          git checkout -b badge || git checkout badge
+          cp ./output/badge.svg README_badge.svg  # Rename if necessary
           git add README_badge.svg
-          git commit -m "Add Lines of Code badge [skip ci]"
+          git commit -m "Add Lines of Code badge [skip ci]" || echo "No changes to commit"
           git push origin badge --force
