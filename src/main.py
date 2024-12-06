@@ -230,9 +230,27 @@ def intro_onKeyPress(app,key):
         app.diffLevel = 6
         app.carRepr = False
         setActiveScreen('play')
-
     # Path finding and optimal path selecting
     elif key == 'd':
+        app.roads = [Road("Straight", [(670.0, 0), (670.0, 150.0)], "Ground"),
+                     Road("Straight", [(1000, 360.0), (850.0, 360.0)], "Ground"),
+                     Road("Straight", [(0, 460.0), (150, 460.0)], "Ground"),
+                     Road("Straight", [(0, 350.0), (150.0, 350.0)], "Ground"),
+                     Road("Straight", [(150, 350), (670.0, 150.0)], "Ground"),
+                     Road("Straight", [(670, 150), (673.0, 222.0)], "Ground"),
+                     Road("Straight", [(673, 222), (172, 413)], "Ground"),
+                     Road("Straight", [(172, 413), (150.0, 350.0)], "Ground"),
+                     Road("Straight", [(150, 460), (850.0, 360.0)], "Ground"),
+                     Road("Straight", [(850, 360), (844, 159.0)], "Ground"),
+                     Road("Straight", [(844, 159), (670.0, 150.0)], "Ground")]
+
+        findIntersections(app)
+        app.showPath = True
+        app.shortCutMode = True
+        app.diffLevel = 6
+        setActiveScreen('play')
+    # Path finding and optimal path selecting
+    elif key == 'e':
         app.roads = [Road("Straight", [(0, 260.0), (150, 260.0)], "Ground"),
                      Road("Straight", [(1000, 210.0), (850, 210.0)], "Ground"),
                      Road("Straight", [(0, 190.0), (150, 190.0)], "Ground"),
@@ -961,8 +979,6 @@ def play_onMousePress(app,mouseX,mouseY):
                             app.soundBack.play()
                     if app.musicEffects:
                         app.buttonSound.play()
-                    if not app.initiated:
-                        app.path = findUnpackedPaths(app,findPaths(app, app.roads[0], app.roads[1]))
                     app.initiated = True
                 return
 

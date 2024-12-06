@@ -3,7 +3,7 @@
 
 ## Description: 
 This project is a traffic simulation game where users design a road network to efficiently transport cars to their destinations. 
-The goal is to minimize the average time cars spend traveling and get as many as possible cars to their destinations.
+The goal is to minimize the average time cars spend traveling and maximize the number of cars successfully reach their destinations
 
 ## Features
 
@@ -16,6 +16,7 @@ The goal is to minimize the average time cars spend traveling and get as many as
 | Path Finding                      | Finds the top three shortest paths and allow each car to select the optimal path based on the road conditions.                                                                                                  |
 | Traffic Lights                    | Traffic lights will be generated at eligible intersections and will control the car's movement depending on the car's intended direction (going straight, right, and left).                                     |
 | Customize Traffic Lights Duration | The user can customize the duration of traffic lights when drawing the roads                                                                                                                                    |
+| Car movement adjustment           | The movement of cars will also be according to the status of other cars. The timing of starting moving when there's a car ahead is intentionally not synchronized for a more realistic feeling, which is much more similar to the behaviors of drivers in real life|                                   
 | Settings Customization            | Toggle background music, sound effects, car representations for display, and car paths.                                                                                                                         |
 | Instructions and History          | Access detailed instructions and view historical scores to track your progress.                                                                                                                                 |
 | Scoring System                    | Earn points based on the efficiency of the road network and the performance of traffic management (the number of cars reached their destinations, the difficulty level, and the average time spent by each car. |
@@ -122,12 +123,18 @@ Once the user have designed the road network, click the 'Finished' button to beg
 
 ## Shortcut Commands:
 The shortcut command are for developing and testing purposes. These commands are only effective at the intro menu page.
-After each testing simulations, please restart the app to prevent unintended errors before loading another one.
+After each testing run, please restart the app before loading another one or running the app for players to prevent unintended errors.
 
-| Key                               | Description                                                                                                                                                     |
-|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| a                                 | Normal path finding and shows path optimal path selecting.                                                                                                      |
-| b                                 | Curved roads, bridge, path finding, path display (adjustable in settings), and optimal path selecting                                                           |
-| c                                 | More complex curved roads, bridge, path finding, path display (adjustable in settings), car representation (adjustable in settings), and optimal path selecting |
-| d                                 | Path finding and optimal path selecting                                                                |
+| Key | Description                                                                                                                                                     |
+|-----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| a   | Normal path finding and shows path optimal path selecting.                                                                                                      |
+| b   | Curved roads, bridge, path finding, path display (adjustable in settings), and optimal path selecting                                                           |
+| c   | More complex curved roads, bridge, path finding, path display (adjustable in settings), car representation (adjustable in settings), and optimal path selecting |
+| d   | Path finding and optimal path selecting                                                                |
+| e   | Path finding and optimal path selecting                                                                |
 
+
+
+
+
+Note: The writing of this README file received assistance from ChatGPT (mainly the formating)

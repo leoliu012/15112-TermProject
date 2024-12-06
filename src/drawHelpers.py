@@ -43,7 +43,7 @@ def drawButtons(app):
 def drawResults(app):
     drawRect(160, 100, app.width - 320, app.height - 200, fill='powderBlue', border='cornflowerBlue', borderWidth=4)
     drawLabel(f"{app.username}, you did it!",200,app.height - 450,size=40,bold=True,align='left')
-    drawLabel("Over the course of 90s, you let", 200, app.height - 390, size=20,bold=True,align='left')
+    drawLabel("Over the course of 60s, you let", 200, app.height - 390, size=20,bold=True,align='left')
     drawLabel(f'{app.carNum} cars', 220, app.height - 350, size=40, bold=True,align='left')
     drawLabel('safely reached their destinations, with the average time spent:', 200, app.height - 290, size=20, bold=True,align='left')
     drawLabel(f'{app.aveTime} s!', 220, app.height - 250, size=40, bold=True,align='left')
