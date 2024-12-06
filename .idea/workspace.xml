@@ -126,7 +126,7 @@
       <workItem from="1733255607694" duration="41246000" />
       <workItem from="1733384860264" duration="23539000" />
       <workItem from="1733452714889" duration="539000" />
-      <workItem from="1733453670001" duration="18590000" />
+      <workItem from="1733453670001" duration="19110000" />
     </task>
     <task id="LOCAL-00001" summary="Tried GitHub">
       <option name="closed" value="true" />
@@ -360,7 +360,47 @@
       <option name="project" value="LOCAL" />
       <updated>1733481448123</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Bug fixed and small improvements">
+      <option name="closed" value="true" />
+      <created>1733481951397</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1733481951397</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Bug fixed and small improvements">
+      <option name="closed" value="true" />
+      <created>1733482098344</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1733482098344</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Bug fixed and small improvements">
+      <option name="closed" value="true" />
+      <created>1733482232393</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1733482232393</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Bug fixed and small improvements">
+      <option name="closed" value="true" />
+      <created>1733482329462</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1733482329462</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Bug fixed and small improvements">
+      <option name="closed" value="true" />
+      <created>1733482408820</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1733482408820</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +419,7 @@
     <SUITE FILE_PATH="coverage/15112_TermProject$roadDrawHelpers.coverage" NAME="roadDrawHelpers Coverage Results" MODIFIED="1733446567954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/15112_TermProject$objects.coverage" NAME="objects Coverage Results" MODIFIED="1733165856174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/15112_TermProject$practicalFunctions.coverage" NAME="practicalFunctions Coverage Results" MODIFIED="1733422082114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/15112_TermProject$main.coverage" NAME="main Coverage Results" MODIFIED="1733481451003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/15112_TermProject$main.coverage" NAME="main Coverage Results" MODIFIED="1733481981954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/15112_TermProject$roadDraw.coverage" NAME="roadDraw Coverage Results" MODIFIED="1733175348671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/15112_TermProject$cars.coverage" NAME="cars Coverage Results" MODIFIED="1733446712992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
