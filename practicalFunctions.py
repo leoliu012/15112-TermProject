@@ -265,3 +265,48 @@ def find_perpendicular_point(line, point):
 #THIS IS THE END OF CITED CODE
 #################################################
 #################################################
+
+
+def linesIntersect(line1, line2):
+    (x1, y1), (x2, y2) = line1
+    (x3, y3), (x4, y4) = line2
+
+    #find slopes
+    #if line 1 is vertical
+    if x2 - x1 == 0:
+        r1 = None
+    else:
+        r1 = (y2 - y1) / (x2 - x1)
+
+    if x4 - x3 == 0:
+        r2 = None
+    else:
+        r2 = (y4 - y3) / (x4 - x3)
+    #find the intersection point
+    if r1 == None and r2 == None:
+        return None
+
+    elif r1 == None:
+        x = x1
+        # y-y2 = r(x-x1)+y2
+        y = r2 * (x - x3) + y3
+    elif r2 == None:
+        x = x3
+        y = r1 * (x - x1) + y1
+    elif r1 == r2:
+        return None
+    else:
+        # y = r2 * (x - x3) + y3
+        # y=r1 * (x - x1) + y1
+        # r1 * (x - x1) + y1 = r2 * (x - x3) + y3
+        x = (r2 * x3 - r1 * x1 + y1 - y3) / (r2 - r1)
+        y = r1 * (x - x1) + y1
+
+    #check if the intersection is in both lines
+    if (min(x1, x2) <= x <= max(x1, x2) and
+            min(y1, y2) <= y <= max(y1, y2) and
+            min(x3, x4) <= x <= max(x3, x4) and
+            min(y3, y4) <= y <= max(y3, y4)):
+        return (x, y)
+    else:
+        return None

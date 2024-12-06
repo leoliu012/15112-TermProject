@@ -4,18 +4,757 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e36762a-6ef8-4f75-8b45-ecf2e823c7f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/savedInfo.txt" afterDir="false" />
+    <list default="true" id="3e36762a-6ef8-4f75-8b45-ecf2e823c7f6" name="Changes" comment="Bug fixed and small improvements">
+      <change afterPath="$PROJECT_DIR$/cars.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drawHelpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roadCalculations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roadDrawHelpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmu_graphics/meta/updates.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmu_graphics/meta/updates.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backgrounds/intro.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/button/button1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/button/button1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/button/diffSel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/button/minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/button/plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cars/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cars/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cars/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmu_cpcs_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/demo-pil-getpixel-and-putpixel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/demo-pil-image-draw.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/demo-pil-scaling.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/demo-pil-sprites.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/demo-pil-transpose.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-012.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-015.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-016.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-019.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-021.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-022.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-026.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-027.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-028.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-029.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-030.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-031.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-032.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-034.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-035.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-036.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-037.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-038.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-039.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-040.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-041.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-042.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-043.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-044.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-045.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-046.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-047.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-048.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-049.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-050.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-051.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-052.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-053.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-054.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-055.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-056.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-057.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-058.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-059.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-060.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-061.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-062.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-063.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-064.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-065.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-066.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-067.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-068.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-069.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-070.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-071.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-072.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-073.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-074.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-075.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-076.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-077.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-078.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-079.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-081.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-082.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-083.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-084.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-085.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-086.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-087.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-088.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-089.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-090.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-091.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-092.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-093.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-094.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-095.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-096.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-097.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-098.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-099.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-106.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-107.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-108.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-109.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-110.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-112.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-113.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-114.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-115.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-116.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-117.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-118.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-119.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-120.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-121.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-122.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-123.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-124.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-125.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-126.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-127.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-129.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-130.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-131.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-132.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-133.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-134.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-135.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-136.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-137.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-138.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-139.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-140.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-141.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-142.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-143.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-144.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-145.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-146.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-147.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-148.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-149.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-150.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-151.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-152.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-153.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-154.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-155.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-156.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-157.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-158.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-159.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-160.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-161.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-162.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-163.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-164.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-165.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-166.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-167.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-168.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-169.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-170.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-171.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-172.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-173.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-174.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-175.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-176.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-177.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-178.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-179.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-181.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-182.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-183.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-184.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-185.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-186.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-187.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-188.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-189.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-190.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-191.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-192.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-193.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-194.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-195.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-196.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-197.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-198.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-199.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/bridge/ezgif-frame-200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-012.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-015.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-016.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-019.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-021.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-022.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-026.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-027.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-028.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-029.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-030.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-031.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-032.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-034.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-035.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-036.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-037.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-038.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-039.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-040.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-041.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-042.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-043.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-044.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-045.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-046.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-047.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-048.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-049.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-050.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-051.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-052.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-053.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-054.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-055.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-056.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-057.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-058.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-059.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-060.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-061.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-062.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-063.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-064.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-065.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-066.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-067.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-068.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-069.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-070.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-071.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-072.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-073.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-074.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-075.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-076.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-077.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-078.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-079.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-081.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-082.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-083.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-084.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-085.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-086.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-087.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-088.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-089.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-090.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-091.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-092.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-093.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-094.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-095.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-096.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-097.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-098.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-099.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-106.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-107.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-108.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-109.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-110.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-112.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-113.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-114.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-115.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-116.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-117.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-118.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-119.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-120.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-121.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-122.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-123.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-124.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-125.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-126.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-127.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-129.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-130.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-131.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-132.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-133.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-134.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-135.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-136.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-137.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-138.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-139.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-140.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/curvedRoad/ezgif-frame-141.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-012.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-015.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-016.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-019.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-021.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-022.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-026.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-027.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-028.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-029.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-030.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-031.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-032.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-034.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-035.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-036.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-037.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-038.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-039.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-040.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-041.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-042.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-043.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-044.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-045.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-046.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-047.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-048.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-049.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-050.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-051.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-052.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-053.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-054.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-055.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-056.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-057.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-058.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-059.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-060.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-061.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-062.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-063.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-064.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-065.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-066.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-067.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-068.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-069.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-070.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-071.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-072.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-073.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-074.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-075.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-076.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-077.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-078.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-079.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-081.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-082.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-083.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-084.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-085.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-086.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-087.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-088.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-089.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-090.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-091.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-092.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-093.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-094.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-095.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-096.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-097.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-098.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-099.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-106.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-107.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-108.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-109.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-110.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-112.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-113.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-114.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-115.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-116.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-117.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-118.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-119.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-120.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-121.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-122.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-123.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-124.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-125.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-126.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-127.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-129.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-130.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-131.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-132.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-133.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-134.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-135.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-136.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-137.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-138.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-139.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-140.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-141.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-142.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-143.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-144.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-145.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-146.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-147.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-148.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-149.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-150.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-151.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-152.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-153.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-154.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-155.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-156.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-157.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-158.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-159.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-160.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-161.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-162.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-163.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-164.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-165.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-166.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-167.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-168.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-169.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-170.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-171.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-172.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-173.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-174.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-175.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-176.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-177.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-178.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-179.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-181.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-182.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-183.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-184.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-185.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-186.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-187.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-188.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-189.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-190.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-191.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-192.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-193.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-194.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-195.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-196.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-197.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-198.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-199.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/play/ezgif-frame-200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-012.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-015.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-016.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-019.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-021.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-022.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-026.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-027.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-028.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-029.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-030.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-031.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-032.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-034.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-035.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-036.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-037.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-038.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-039.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-040.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-041.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-042.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-043.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-044.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/remove/ezgif-frame-045.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-012.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-015.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-016.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-019.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-021.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-022.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-026.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-027.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-028.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-029.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-030.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-031.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-032.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-034.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-035.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-036.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-037.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-038.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-039.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-040.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-041.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-042.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-043.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-044.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-045.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-046.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-047.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-048.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-049.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-050.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-051.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-052.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-053.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-054.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-055.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-056.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-057.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-058.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-059.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-060.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-061.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-062.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-063.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-064.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-065.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-066.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-067.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-068.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-069.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-070.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-071.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-072.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-073.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-074.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-075.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-076.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-077.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-078.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-079.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-080.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-081.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-082.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-083.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-084.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-085.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-086.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-087.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-088.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-089.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-090.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-091.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-092.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-093.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-094.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-095.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-096.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-097.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-098.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-099.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-106.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-107.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-108.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-109.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instructions/straightRoad/ezgif-frame-110.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/Jack Jezzro And Friends - Tea For Two (feat. Beegie Adair).mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/Silver Screen - Jumping Fleas.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/bgm.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/button.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/traffic.mp3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/objects.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/practicalFunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/practicalFunctions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/savedInfo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/savedInfo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sign/bz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sign/cross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sign/instructions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sign/settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sign/shovel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/title/diffLevel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/title/diffTitle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/title/history.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/title/title.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/title/username.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,10 +783,12 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.cars.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;Python.objects.executor&quot;: &quot;Run&quot;,
     &quot;Python.practicalFunctions.executor&quot;: &quot;Run&quot;,
     &quot;Python.roadDraw.executor&quot;: &quot;Run&quot;,
+    &quot;Python.roadDrawHelpers.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -91,7 +832,9 @@
       <workItem from="1733123612110" duration="37523000" />
       <workItem from="1733254887922" duration="227000" />
       <workItem from="1733255607694" duration="41246000" />
-      <workItem from="1733384860264" duration="16013000" />
+      <workItem from="1733384860264" duration="23539000" />
+      <workItem from="1733452714889" duration="539000" />
+      <workItem from="1733453670001" duration="3119000" />
     </task>
     <task id="LOCAL-00001" summary="Tried GitHub">
       <option name="closed" value="true" />
@@ -165,7 +908,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733243501956</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Bug fixed and small improvements">
+      <option name="closed" value="true" />
+      <created>1733441170768</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1733441170769</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Bug fixed and small improvements">
+      <option name="closed" value="true" />
+      <created>1733441225455</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1733441225455</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,23 +936,15 @@
     </ignored-roots>
     <MESSAGE value="Tried GitHub" />
     <MESSAGE value="Preliminary version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preliminary version" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>1810</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Bug fixed and small improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fixed and small improvements" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/15112_TermProject$roadDrawHelpers.coverage" NAME="roadDrawHelpers Coverage Results" MODIFIED="1733446567954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/15112_TermProject$objects.coverage" NAME="objects Coverage Results" MODIFIED="1733165856174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/15112_TermProject$practicalFunctions.coverage" NAME="practicalFunctions Coverage Results" MODIFIED="1733422082114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/15112_TermProject$main.coverage" NAME="main Coverage Results" MODIFIED="1733441042422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/15112_TermProject$main.coverage" NAME="main Coverage Results" MODIFIED="1733453728877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/15112_TermProject$roadDraw.coverage" NAME="roadDraw Coverage Results" MODIFIED="1733175348671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/15112_TermProject$cars.coverage" NAME="cars Coverage Results" MODIFIED="1733446712992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

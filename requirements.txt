@@ -1,1 +1,2 @@
 pillow == 11.0.0
+cmu-graphics == 1.1.39

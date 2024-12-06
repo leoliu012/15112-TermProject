@@ -80,29 +80,6 @@ class Intersection:
         return str(self.points) +' '+ str(self.elevation)+' '+ str(self.type)+' '+ str(self.roads)
 
 
-    # def __eq__(self,other):
-    #     if isinstance(other,Intersection):
-    #         return self.points == other.points and self.elevation == other.elevation
-
-    #
-    # def controlTrafficLights(self):
-    #     for inter1 in self.roads[0].intersections:
-    #         if not inter1.trafficLightInitiated:
-    #             # if inter1.trafficLightsStatus +1 <= 2:
-    #             #     inter1.trafficLightsStatus+=1
-    #             # else:
-    #             #     inter1.trafficLightsStatus = 1
-    #             inter1.trafficLightInitiated = True
-    #         for inter2 in self.roads[1].intersections:
-    #             if inter1.points == inter2.points and not inter2.trafficLightInitiated:
-    #                 if inter1.trafficLightsStatus == 0 or inter1.trafficLightsStatus == 1:
-    #                     inter2.trafficLightsStatus = 2
-    #                 else:
-    #                     inter2.trafficLightsStatus = 1
-    #                 inter2.trafficLightsStatus = not inter1.trafficLightsStatus
-    #                 inter1.trafficLightInitiated = True
-
-
 
 class Button:
     def __init__(self, type, label, x, y, width=200, height=50):
