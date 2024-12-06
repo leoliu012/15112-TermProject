@@ -10,22 +10,22 @@ import math
 import random
 
 
-import resource
-
-def increase_file_limit():
-    soft, hard = resource.getrlimit(resource.RLIMIT_NOFILE)
-    print(f"Current limits: soft={soft}, hard={hard}")
-    try:
-        # Define new soft and hard limits
-        new_soft = 4096
-        new_hard = hard if hard >= 4096 else 4096
-
-        resource.setrlimit(resource.RLIMIT_NOFILE, (new_soft, new_hard))
-        print(f"New limits: soft={new_soft}, hard={new_hard}")
-    except ValueError as e:
-        print(f"Failed to set file limits: {e}")
-    except resource.error as e:
-        print(f"Resource error: {e}")
+# import resource
+#
+# def increase_file_limit():
+#     soft, hard = resource.getrlimit(resource.RLIMIT_NOFILE)
+#     print(f"Current limits: soft={soft}, hard={hard}")
+#     try:
+#         # Define new soft and hard limits
+#         new_soft = 4096
+#         new_hard = hard if hard >= 4096 else 4096
+#
+#         resource.setrlimit(resource.RLIMIT_NOFILE, (new_soft, new_hard))
+#         print(f"New limits: soft={new_soft}, hard={new_hard}")
+#     except ValueError as e:
+#         print(f"Failed to set file limits: {e}")
+#     except resource.error as e:
+#         print(f"Resource error: {e}")
 
 
 ##
@@ -40,9 +40,9 @@ def increase_file_limit():
 ##
 
 def onAppStart(app):
-    increase_file_limit()
-    soft, hard = resource.getrlimit(resource.RLIMIT_NOFILE)
-    print(f"After increase: soft={soft}, hard={hard}")
+    # increase_file_limit()
+    # soft, hard = resource.getrlimit(resource.RLIMIT_NOFILE)
+    # print(f"After increase: soft={soft}, hard={hard}")
     app.instruFromMenu = False
     app.width = 1000
     app.height = 600
