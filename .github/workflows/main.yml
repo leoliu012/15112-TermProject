@@ -29,11 +29,12 @@ jobs:
           LOC=$(jq '.SUM.code' cloc.json)
           echo "LOC=$LOC" >> $GITHUB_ENV
 
-      # Step 4: Generate Badge using Shields.io
+      # Step 4: Generate Badge using Shields.io API
       - name: Generate Badge
         run: |
           mkdir -p output
-          echo "![Lines of Code](https://img.shields.io/badge/Lines%20of%20Code-${LOC}-brightgreen)" > output/badge.md
+          BADGE_URL="https://img.shields.io/badge/Lines%20of%20Code-${LOC}-brightgreen.svg"
+          curl -L $BADGE_URL -o output/badge.svg
 
       # Step 5: Commit and push the badge to a separate branch (e.g., 'badge')
       - name: Commit LOC Badge
@@ -44,7 +45,6 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b badge || git checkout badge
-          mv output/badge.md README_badge.md  # Rename if necessary
-          git add README_badge.md
+          git add output/badge.svg
           git commit -m "Update Lines of Code badge [skip ci]" || echo "No changes to commit"
           git push origin badge --force
