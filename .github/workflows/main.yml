@@ -15,27 +15,36 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # Step 2: Make Code Badge using shadowmoose/GHA-LoC-Badge
-      - name: Make Code Badge
-        uses: shadowmoose/GHA-LoC-Badge@1.0.0
-        id: badge
-        with:
-          debug: "true"  # Ensure this is a string
-          directory: "./src"  # Adjust based on where your source code resides
-          badge: "./output/badge.svg"
-          patterns: "**/*.py"  # Adjust patterns based on your project's language
-          ignore: "venv/|node_modules/|tests/"  # Ensure this is a string
+      # Step 2: Install cloc and jq
+      - name: Install cloc and jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cloc jq
 
-      # Step 3: Commit and push the badge to a separate branch (e.g., 'badge')
+      # Step 3: Count lines of code
+      - name: Count Lines of Code
+        id: cloc
+        run: |
+          cloc ./src --json > cloc.json
+          LOC=$(jq '.SUM.code' cloc.json)
+          echo "LOC=$LOC" >> $GITHUB_ENV
+
+      # Step 4: Generate Badge using Shields.io
+      - name: Generate Badge
+        run: |
+          mkdir -p output
+          echo "![Lines of Code](https://img.shields.io/badge/Lines%20of%20Code-${LOC}-brightgreen)" > output/badge.md
+
+      # Step 5: Commit and push the badge to a separate branch (e.g., 'badge')
       - name: Commit LOC Badge
-        if: steps.badge.outputs.total_lines != ''
+        if: env.LOC != ''
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b badge || git checkout badge
-          cp ./output/badge.svg README_badge.svg  # Rename if necessary
-          git add README_badge.svg
-          git commit -m "Add Lines of Code badge [skip ci]" || echo "No changes to commit"
+          mv output/badge.md README_badge.md  # Rename if necessary
+          git add README_badge.md
+          git commit -m "Update Lines of Code badge [skip ci]" || echo "No changes to commit"
           git push origin badge --force
