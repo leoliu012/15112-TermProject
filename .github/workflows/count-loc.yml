@@ -1,0 +1,43 @@
+###This file is from ChatGPT###
+
+name: Count Lines of Code
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install cloc
+      run: sudo apt-get install cloc
+
+    - name: Count lines of code
+      id: cloc
+      run: |
+        cloc . --json > cloc.json
+        LOC=$(jq '.SUM.code' cloc.json)
+        echo "LOC=$LOC" >> $GITHUB_ENV
+
+    - name: Update LOC.md
+      run: |
+        echo "# Lines of Code" > LOC.md
+        echo "![Lines of Code](https://img.shields.io/badge/Lines%20of%20Code-${LOC}-brightgreen)" >> LOC.md
+
+    - name: Commit LOC.md
+      run: |
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add LOC.md
+        git commit -m "Update Lines of Code count [skip ci]" || echo "No changes to commit"
+        git push
