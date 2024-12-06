@@ -53,7 +53,7 @@ OPTIONS = {
     'argv_emulation': True,
     'packages': ['cmu_graphics', 'PIL', 'objects', 'practicalFunctions','math'],
     'includes': ['cmu_graphics', 'PIL', 'objects', 'practicalFunctions','math'],
-    'iconfile': 'assets/sign/cross.png',  # Preferably use a .icns file for macOS icons
+    'iconfile': 'assets/logos.png',
     'plist': {
         'CFBundleName': 'TimeWiseTransport',
         'CFBundleDisplayName': 'TimeWise Transport',

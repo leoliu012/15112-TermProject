@@ -7,7 +7,6 @@
 from cmu_graphics import  *
 import math
 
-
 def drawGrid(app):
     for i in range(0, app.width, app.gridSize):
         drawLine(i, 0, i, app.height, fill='lightGray')
