@@ -3,7 +3,7 @@
 
 ## Description: 
 This project is a traffic simulation game where users design a road network to efficiently transport cars to their destinations. 
-The goal is to minimize the average time cars spend traveling.
+The goal is to minimize the average time cars spend traveling and get as many as possible cars to their destinations.
 
 ## Features
 
@@ -122,7 +122,7 @@ Once the user have designed the road network, click the 'Finished' button to beg
 
 ## Shortcut Commands:
 The shortcut command are for developing and testing purposes. These commands are only effective at the intro menu page.
-After each testing run, please restart the app to prevent unintended errors.
+After each testing simulations, please restart the app to prevent unintended errors before loading another one.
 
 | Key                               | Description                                                                                                                                                     |
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
