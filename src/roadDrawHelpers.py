@@ -422,7 +422,8 @@ def magneticCursor(app,mouseX,mouseY):
                 perps = find_perpendicular_point(line,(mouseX, mouseY) )
                 if perps:
                     perpX,perpY = perps
-                    trash,(app.cursorX, app.cursorY) = extendLine((mouseX, mouseY),(perpX,perpY),30)
+                    trash,(app.cursorX, app.cursorY) = extendLine((mouseX, mouseY),
+                                                                  (perpX,perpY),30)
                     app.cursorUserControlled = False
                     return
     app.cursorUserControlled = True

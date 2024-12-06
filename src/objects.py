@@ -5,7 +5,6 @@
 #####################################################
 
 from practicalFunctions import *
-
 class Road:
     def __init__(self,type,points,elevation,beginning = False):
         self.type = type

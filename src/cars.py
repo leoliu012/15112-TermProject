@@ -78,7 +78,8 @@ def getCollisionBox(app,car):
     rotatedCornerX3, rotatedCornerY3 = rotatePoint(cX, cY, cornerX3,cornerY3, car.angle)
     rotatedCornerX4, rotatedCornerY4 = rotatePoint(cX, cY, cornerX4,cornerY4, car.angle)
 
-    return (rotatedCornerX1,rotatedCornerY1), (rotatedCornerX2, rotatedCornerY2),(rotatedCornerX3, rotatedCornerY3),(rotatedCornerX4, rotatedCornerY4)
+    return ((rotatedCornerX1,rotatedCornerY1), (rotatedCornerX2, rotatedCornerY2),
+            (rotatedCornerX3, rotatedCornerY3),(rotatedCornerX4, rotatedCornerY4))
 
 def checkCollisionTL(app, car,tl):
     collisionBox = getCollisionBox(app, car)
