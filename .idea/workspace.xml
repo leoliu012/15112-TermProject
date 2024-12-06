@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e36762a-6ef8-4f75-8b45-ecf2e823c7f6" name="Changes" comment="Bug fixed and small improvements">
-      <change beforePath="$PROJECT_DIR$/src/cars.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cars.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/roadDrawHelpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/roadDrawHelpers.py" afterDir="false" />
-    </list>
+    <list default="true" id="3e36762a-6ef8-4f75-8b45-ecf2e823c7f6" name="Changes" comment="Bug fixed and small improvements" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +126,7 @@
       <workItem from="1733255607694" duration="41246000" />
       <workItem from="1733384860264" duration="23539000" />
       <workItem from="1733452714889" duration="539000" />
-      <workItem from="1733453670001" duration="18114000" />
+      <workItem from="1733453670001" duration="18590000" />
     </task>
     <task id="LOCAL-00001" summary="Tried GitHub">
       <option name="closed" value="true" />
@@ -356,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733481224862</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Bug fixed and small improvements">
+      <option name="closed" value="true" />
+      <created>1733481448123</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1733481448123</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,7 +379,7 @@
     <SUITE FILE_PATH="coverage/15112_TermProject$roadDrawHelpers.coverage" NAME="roadDrawHelpers Coverage Results" MODIFIED="1733446567954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/15112_TermProject$objects.coverage" NAME="objects Coverage Results" MODIFIED="1733165856174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/15112_TermProject$practicalFunctions.coverage" NAME="practicalFunctions Coverage Results" MODIFIED="1733422082114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/15112_TermProject$main.coverage" NAME="main Coverage Results" MODIFIED="1733479771783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/15112_TermProject$main.coverage" NAME="main Coverage Results" MODIFIED="1733481451003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/15112_TermProject$roadDraw.coverage" NAME="roadDraw Coverage Results" MODIFIED="1733175348671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/15112_TermProject$cars.coverage" NAME="cars Coverage Results" MODIFIED="1733446712992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
