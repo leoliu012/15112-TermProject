@@ -9,25 +9,6 @@ from practicalFunctions import *
 import math
 import random
 
-
-# import resource
-#
-# def increase_file_limit():
-#     soft, hard = resource.getrlimit(resource.RLIMIT_NOFILE)
-#     print(f"Current limits: soft={soft}, hard={hard}")
-#     try:
-#         # Define new soft and hard limits
-#         new_soft = 4096
-#         new_hard = hard if hard >= 4096 else 4096
-#
-#         resource.setrlimit(resource.RLIMIT_NOFILE, (new_soft, new_hard))
-#         print(f"New limits: soft={new_soft}, hard={new_hard}")
-#     except ValueError as e:
-#         print(f"Failed to set file limits: {e}")
-#     except resource.error as e:
-#         print(f"Resource error: {e}")
-
-
 ##
 #Car images: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fillustrations%2Fcar-top-view&psig=AOvVaw2X3GXjKWFy73DUyrCA1lRk&ust=1732922954816000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDF0JqXgIoDFQAAAAAdAAAAABAE
 #Bulldoze sign: https://www.google.com/url?sa=i&url=https%3A%2F%2Fdepositphotos.com%2Fvector%2Fbulldozer-danger-sign-or-symbol-text-do-not-enter-work-area-137213888.html&psig=AOvVaw12XVTRP41F261VeAQafj0D&ust=1733115705195000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLiCwqTlhYoDFQAAAAAdAAAAABAJ
@@ -40,9 +21,6 @@ import random
 ##
 
 def onAppStart(app):
-    # increase_file_limit()
-    # soft, hard = resource.getrlimit(resource.RLIMIT_NOFILE)
-    # print(f"After increase: soft={soft}, hard={hard}")
     app.instruFromMenu = False
     app.width = 1000
     app.height = 600
@@ -330,6 +308,7 @@ def history_redrawAll(app):
     drawLabel("Difficulty", 600, 140, size=30,bold=True)
     drawLabel("Score", 800, 140, size=30,bold=True)
 
+    print(app.ranking)
     if len(app.ranking)<=10:
         for i in range(len(app.ranking)):
             user = app.ranking[i]
@@ -368,11 +347,12 @@ def difficulty_onMouseMove(app, mouseX, mouseY):
         app.currOnButton = app.backButton
 
 def history_onMousePress(app, mouseX, mouseY):
+
     if (app.backButton.x <= mouseX <= app.backButton.x + app.backButton.width and
             app.backButton.y <= mouseY <= app.backButton.y + app.backButton.height):
         if app.musicEffects:
             app.buttonSound.play()
-        intro_onAppStart(app)
+        app.ranking = []
         setActiveScreen("intro")
 
 
@@ -1492,7 +1472,9 @@ def play_onStep(app):
 
     if not app.paused:
         if app.counter % 40 == 0:
-            generateCars(app)
+            check = generateCars(app)
+            if not check:
+                app.paused = True
         app.counter += 1
         trafficLightsToggle(app)
         updateCarMove(app)

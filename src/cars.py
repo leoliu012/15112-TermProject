@@ -30,7 +30,8 @@ def generateCars(app):
 
 
         paths = findUnpackedPaths(app,findPaths(app, startRoad, endRoad))
-
+        if paths == []:
+            return None
         path = sortPath(app,paths)[0]
         shiftVal = app.roadWidth / 3
         car = Car(carInd, app.roads[1], app.roads[0].points[1],path,-shiftVal)
@@ -395,6 +396,7 @@ def sortPath(app,paths):
     pathDistanceDict = sortAmountCarsUsingPath(app, paths,pathDistanceDict)
     ret = []
     shortedPath = 0
+    print(pathDistanceDict)
     shortedPathLen = pathDistanceDict[shortedPath]
     for ind in pathDistanceDict:
         if pathDistanceDict[ind] > shortedPath:
