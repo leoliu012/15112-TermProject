@@ -20,8 +20,8 @@ jobs:
           ignore: 'node_modules'  # Or specify files/directories to ignore
       - name: Commit badge
         run: |
-          git config --global user.name 'your-github-username'
-          git config --global user.email 'your-github-email'
+          git config --global user.name 'leoliu012'
+          git config --global user.email 'leo.xinrui.liu@gmail.com'
           git add ./output/badge.svg
           git commit -m 'Update Lines of Code badge'
           git push
