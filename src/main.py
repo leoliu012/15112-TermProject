@@ -49,7 +49,7 @@ def onAppStart(app):
     app.username = ''
     app.diffLevel = 4
 
-    crossURL = './assets/sign/cross.png'
+    crossURL = '../assets/sign/cross.png'
     app.crossImage = CMUImage(loadPilImage(crossURL))
 
     app.crossImage = CMUImage(loadPilImage(crossURL))
@@ -77,13 +77,13 @@ def onAppStart(app):
     app.justCome = True
     app.settingsButtons = []
 
-    app.soundBack = Sound('./assets/music/bgm.mp3')
+    app.soundBack = Sound('../assets/music/bgm.mp3')
     if app.backgroundMusic:
         app.soundBack.play(loop=True)
     else:
         app.soundBack.pause()
 
-    app.buttonSound = Sound('./assets/music/button.mp3')
+    app.buttonSound = Sound('../assets/music/button.mp3')
     app.roads = []
 
     app.showInstructions = False
@@ -97,40 +97,40 @@ def onAppStart(app):
     app.settingsInstructions = False
     app.scoreInstructions = False
 
-    app.imageUrlsStraightRoad = [f'./assets/instructions/straightRoad/ezgif-frame-00{i}.jpg' for i in range(1, 10)]
-    app.imageUrlsStraightRoad += [f'./assets/instructions/straightRoad/ezgif-frame-0{i}.jpg' for i in range(10, 100)]
-    app.imageUrlsStraightRoad += [f'./assets/instructions/straightRoad/ezgif-frame-{i}.jpg' for i in range(100, 111)]
+    app.imageUrlsStraightRoad = [f'../assets/instructions/straightRoad/ezgif-frame-00{i}.jpg' for i in range(1, 10)]
+    app.imageUrlsStraightRoad += [f'../assets/instructions/straightRoad/ezgif-frame-0{i}.jpg' for i in range(10, 100)]
+    app.imageUrlsStraightRoad += [f'../assets/instructions/straightRoad/ezgif-frame-{i}.jpg' for i in range(100, 111)]
     app.imagesStraightRoad = [Image.open(url) for url in app.imageUrlsStraightRoad]
     app.imagesStraightRoad = [CMUImage(image) for image in app.imagesStraightRoad]
     app.straightRoadImageInd = 0
 
 
-    app.imageUrlsBridge = [f'./assets/instructions/bridge/ezgif-frame-00{i}.jpg' for i in range(1, 10)]
-    app.imageUrlsBridge += [f'./assets/instructions/bridge/ezgif-frame-0{i}.jpg' for i in range(10, 100)]
-    app.imageUrlsBridge += [f'./assets/instructions/bridge/ezgif-frame-{i}.jpg' for i in range(100, 201)]
+    app.imageUrlsBridge = [f'../assets/instructions/bridge/ezgif-frame-00{i}.jpg' for i in range(1, 10)]
+    app.imageUrlsBridge += [f'../assets/instructions/bridge/ezgif-frame-0{i}.jpg' for i in range(10, 100)]
+    app.imageUrlsBridge += [f'../assets/instructions/bridge/ezgif-frame-{i}.jpg' for i in range(100, 201)]
     app.imagesBridge = [Image.open(url) for url in app.imageUrlsBridge]
     app.imagesBridge = [CMUImage(image) for image in app.imagesBridge]
     app.bridgeInd = 0
 
 
-    app.imageUrlsCurvedRoad = [f'./assets/instructions/curvedRoad/ezgif-frame-00{i}.jpg' for i in range(1, 10)]
-    app.imageUrlsCurvedRoad += [f'./assets/instructions/curvedRoad/ezgif-frame-0{i}.jpg' for i in range(10, 46)]
-    app.imageUrlsCurvedRoad += [f'./assets/instructions/curvedRoad/ezgif-frame-{i}.jpg' for i in range(100, 142)]
+    app.imageUrlsCurvedRoad = [f'../assets/instructions/curvedRoad/ezgif-frame-00{i}.jpg' for i in range(1, 10)]
+    app.imageUrlsCurvedRoad += [f'../assets/instructions/curvedRoad/ezgif-frame-0{i}.jpg' for i in range(10, 46)]
+    app.imageUrlsCurvedRoad += [f'../assets/instructions/curvedRoad/ezgif-frame-{i}.jpg' for i in range(100, 142)]
     app.imagesCurvedRoad = [Image.open(url) for url in app.imageUrlsCurvedRoad]
     app.imagesCurvedRoad = [CMUImage(image) for image in app.imagesCurvedRoad]
     app.curvedRoadImageInd = 0
 
 
-    app.imageUrlsRemove = [f'./assets/instructions/remove/ezgif-frame-00{i}.jpg' for i in range(1, 10)]
-    app.imageUrlsRemove += [f'./assets/instructions/remove/ezgif-frame-0{i}.jpg' for i in range(10, 46)]
+    app.imageUrlsRemove = [f'../assets/instructions/remove/ezgif-frame-00{i}.jpg' for i in range(1, 10)]
+    app.imageUrlsRemove += [f'../assets/instructions/remove/ezgif-frame-0{i}.jpg' for i in range(10, 46)]
     app.imagesRemove = [Image.open(url) for url in app.imageUrlsRemove]
     app.imagesRemove = [CMUImage(image) for image in app.imagesRemove]
     app.removeInd = 0
 
 
-    app.imageUrlsPlay = [f'./assets/instructions/play/ezgif-frame-00{i}.jpg' for i in range(1, 10)]
-    app.imageUrlsPlay += [f'./assets/instructions/play/ezgif-frame-0{i}.jpg' for i in range(10, 100)]
-    app.imageUrlsPlay += [f'./assets/instructions/play/ezgif-frame-{i}.jpg' for i in range(100, 201)]
+    app.imageUrlsPlay = [f'../assets/instructions/play/ezgif-frame-00{i}.jpg' for i in range(1, 10)]
+    app.imageUrlsPlay += [f'../assets/instructions/play/ezgif-frame-0{i}.jpg' for i in range(10, 100)]
+    app.imageUrlsPlay += [f'../assets/instructions/play/ezgif-frame-{i}.jpg' for i in range(100, 201)]
     app.imagesPlay = [Image.open(url) for url in app.imageUrlsPlay]
     app.imagesPlay = [CMUImage(image) for image in app.imagesPlay]
     app.playInd = 0
@@ -138,13 +138,13 @@ def onAppStart(app):
     print(app.imageUrlsPlay)
 
 def intro_onAppStart(app):
-    introURL = './assets/backgrounds/intro.jpg'
+    introURL = '../assets/backgrounds/intro.jpg'
     app.introImage = CMUImage(loadPilImage(introURL))
 
-    buttonURL = './assets/button/button1.png'
+    buttonURL = '../assets/button/button1.png'
     app.buttonImage = CMUImage(loadPilImage(buttonURL))
 
-    titleURL = './assets/title/title.png'
+    titleURL = '../assets/title/title.png'
     app.titleImage = CMUImage(loadPilImage(titleURL))
 
 
@@ -312,10 +312,10 @@ def history_onAppStart(app):
     app.backButton = Button('back', "Back", backButtonX, backButtonY, backButtonWidth, backButtonHeight)
     app.currOnButton = None
 
-    introURL = './assets/backgrounds/intro.jpg'
+    introURL = '../assets/backgrounds/intro.jpg'
     app.introImage = CMUImage(loadPilImage(introURL))
 
-    titleHistoryURL = './assets/title/history.png'
+    titleHistoryURL = '../assets/title/history.png'
     app.titleHistoryImage = CMUImage(loadPilImage(titleHistoryURL))
 
     app.history = readSavedInfo()
@@ -381,7 +381,7 @@ def history_onMousePress(app, mouseX, mouseY):
 #https://hackernoon.com/how-to-read-text-file-in-python
 ##################################
 def readSavedInfo():
-    file = open("savedInfo.txt", "r")
+    file = open("../savedInfo.txt", "r")
     history = file.read()
     file.close()
     return history
@@ -393,22 +393,22 @@ def difficulty_onAppStart(app):
     app.plusButtonY = app.diffBoxY+40
     app.minusButtonX = app.diffBoxX - 45
     app.minusButtonY = app.diffBoxY+40
-    showBoxURL = './assets/button/diffSel.png'
+    showBoxURL = '../assets/button/diffSel.png'
     app.showBoxImage = CMUImage(loadPilImage(showBoxURL))
 
-    plusURL = './assets/button/plus.png'
+    plusURL = '../assets/button/plus.png'
     app.plusImage = CMUImage(loadPilImage(plusURL))
 
-    minusURL = './assets/button/minus.png'
+    minusURL = '../assets/button/minus.png'
     app.minusImage = CMUImage(loadPilImage(minusURL))
 
-    titleDFURL = './assets/title/diffTitle.png'
+    titleDFURL = '../assets/title/diffTitle.png'
     app.titleDFImage = CMUImage(loadPilImage(titleDFURL))
 
-    titleDFLevelURL = './assets/title/diffLevel.png'
+    titleDFLevelURL = '../assets/title/diffLevel.png'
     app.DFLevelImage = CMUImage(loadPilImage(titleDFLevelURL))
 
-    titleUSRURL = './assets/title/username.png'
+    titleUSRURL = '../assets/title/username.png'
     app.usernameImage = CMUImage(loadPilImage(titleUSRURL))
 
     backButtonWidth = 100
@@ -637,7 +637,7 @@ def play_onAppStart(app):
     app.paused = True
     app.initiated = False
 
-    app.carURLs = [f'./assets/cars/{i}.png' for i in range(0, 3)]
+    app.carURLs = [f'../assets/cars/{i}.png' for i in range(0, 3)]
     app.carImages = [CMUImage(loadPilImage(url)) for url in app.carURLs]
     app.carImageWidth, app.carImageHeight = getImageSize(app.carImages[0])
     app.carImageWidth /= 18
@@ -659,7 +659,7 @@ def play_onAppStart(app):
     app.collisionBoxHeight = 30
     app.collisionBoxHeightCar = 42
 
-    bulldozeURL = './assets/sign/bz.png'
+    bulldozeURL = '../assets/sign/bz.png'
     app.bdImage = CMUImage(loadPilImage(bulldozeURL))
     bdWidth, bdHeight = getImageSize(app.bdImage)
     app.BDmode = False
@@ -668,7 +668,7 @@ def play_onAppStart(app):
 
 
 
-    shovelURL = './assets/sign/shovel.png'
+    shovelURL = '../assets/sign/shovel.png'
     app.shovelImage = CMUImage(loadPilImage(shovelURL))
 
 
@@ -677,27 +677,27 @@ def play_onAppStart(app):
     app.timeSpent=[]
     app.aveTime = 'N/A'
 
-    settingURL = './assets/sign/settings.png'
+    settingURL = '../assets/sign/settings.png'
     app.settingsImage = CMUImage(loadPilImage(settingURL))
     settingsWidth, settingsHeight = getImageSize(app.settingsImage)
     app.settingsWidth = settingsWidth / 16.3
     app.settingsHeight = settingsHeight / 16.3
 
-    instructionsURL = './assets/sign/instructions.png'
+    instructionsURL = '../assets/sign/instructions.png'
     app.instructionsImage = CMUImage(loadPilImage(instructionsURL))
     instructionsWidth, instructionsHeight = getImageSize(app.instructionsImage)
     app.instructionsWidth = instructionsWidth / 7.5
     app.instructionsHeight = instructionsHeight / 7.5
 
-    app.soundTraffic = Sound('./assets/music/traffic.mp3')
+    app.soundTraffic = Sound('../assets/music/traffic.mp3')
 
-    controlBarURL = './assets/control/bar.png'
+    controlBarURL = '../assets/control/bar.png'
     app.barImage = CMUImage(loadPilImage(controlBarURL))
     barWidth, barHeight = getImageSize(app.barImage)
     app.barWidth = barWidth / 6
     app.barHeight = barHeight / 10
 
-    controlBallURL = './assets/control/bar1.png'
+    controlBallURL = '../assets/control/bar1.png'
     app.ballImage = CMUImage(loadPilImage(controlBallURL))
     ballWidth, ballHeight = getImageSize(app.ballImage)
     app.ballWidth = ballWidth / 8
@@ -1187,7 +1187,7 @@ def resetPlay(app):
     app.paused = True
     app.initiated = False
 
-    app.carURLs = [f'./assets/cars/{i}.png' for i in range(0, 3)]
+    app.carURLs = [f'../assets/cars/{i}.png' for i in range(0, 3)]
     app.carImages = [CMUImage(loadPilImage(url)) for url in app.carURLs]
     app.carImageWidth, app.carImageHeight = getImageSize(app.carImages[0])
     app.carImageWidth /= 18
@@ -1538,7 +1538,7 @@ def play_onMouseDrag(app,mouseX,mouseY):
 #https://www.geeksforgeeks.org/reading-writing-text-files-python/
 #############
 def saveInfo(userName,diffLevel,score):
-    saved = open('savedInfo.txt','a')
+    saved = open('../savedInfo.txt','a')
     saved.write(f"{userName} {diffLevel} {score}\n")
 
 def main():
