@@ -1,7 +1,7 @@
 # Welcome to TimeWise Transport!
 ![](https://tokei.rs/b1/github/leoliu012/15112-TermProject)
 
-[![Watch the video](https://img.youtube.com/gq0o-itBRuk/maxresdefault.jpg)](https://youtu.be/gq0o-itBRukA)
+[![Watch the video](https://img.youtube.com/vi/gq0o-itBRuk/maxresdefault.jpg)](https://youtu.be/gq0o-itBRukA)
 
 ## Description: 
 This project is a traffic simulation game where users design a road network to efficiently transport cars to their destinations. 
