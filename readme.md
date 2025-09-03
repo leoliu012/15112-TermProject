@@ -1,6 +1,7 @@
 # Welcome to TimeWise Transport!
 ![](https://tokei.rs/b1/github/leoliu012/15112-TermProject)
 
+## Video Introduction: 
 [![Watch the video](https://img.youtube.com/vi/gq0o-itBRuk/maxresdefault.jpg)](https://youtu.be/gq0o-itBRukA)
 
 ## Description: 
